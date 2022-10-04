@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="cross browserSuite">
+  <test thread-count="5" name="cross browserTest">
+  <parameter name="browser_name" value="chrome"></parameter>
+    <classes>
+      <class name="TestNG_TEST.test_cross_browser"/>
+      <class name="TestNG_TEST.test5"/>
+      </classes>
+  </test> <!-- cross browserTest -->
+ <test thread-count="5" name="Edge">
+  <parameter name="browser_name" value="Edge"></parameter>
+    <classes>
+      <class name="TestNG_TEST.test_cross_browser"/>
+      </classes>
+  </test> <!-- cross browserTest -->
+  <test thread-count="5" name="firefox">
+  <parameter name="browser_name" value="firefox"></parameter>
+    <classes>
+      <class name="TestNG_TEST.test_cross_browser"/>
+      </classes>
+  </test> <!-- cross browserTest -->
+</suite> <!-- cross browserSuite -->
